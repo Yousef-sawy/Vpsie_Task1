@@ -46,7 +46,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/quasar-project.git
+    git clone https://github.com/Yousef-sawy/Vpsie_Task1.git
     cd quasar-project
     ```
 
