@@ -14,7 +14,7 @@ A versatile Quasar application featuring a Todo List, Random Quote Generator, an
 
 ## 📸 Screenshots
 
-*(Consider adding screenshots of your application here!)*
+
 
 *   *Screenshot of Todo List*
   ![Screenshot 2025-05-08 110845](https://github.com/user-attachments/assets/2895add7-c608-45b5-8fe5-e64b3248fdad)
