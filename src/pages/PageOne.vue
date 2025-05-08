@@ -45,7 +45,6 @@ async function fetchQuote() {
   }
 }
 
-// Fetch a quote when the component mounts
 onMounted(fetchQuote);
 </script>
 

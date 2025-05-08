@@ -60,8 +60,8 @@ const newTask = ref('');
 const tasks = ref([]);
 const editTask = ref('');
 const editIndex = ref(null);
-const inputError = ref(false); // Ref to track input error state
-const editError = ref(false); // Ref to track edit error state
+const inputError = ref(false);
+const editError = ref(false);
 
 onMounted(() => {
   const storedTasks = JSON.parse(localStorage.getItem('tasks'));
@@ -78,9 +78,9 @@ function addTask() {
   if (newTask.value.trim()) {
     tasks.value.push(newTask.value.trim());
     newTask.value = '';
-    inputError.value = false; // Reset error state
+    inputError.value = false;
   } else {
-    inputError.value = true; // Set error state
+    inputError.value = true;
   }
 }
 
@@ -91,7 +91,7 @@ function removeTask(index) {
 function startEdit(index) {
   editIndex.value = index;
   editTask.value = tasks.value[index];
-  editError.value = false; // Reset error state when editing
+  editError.value = false;
 }
 
 function finishEdit(index) {
@@ -99,9 +99,9 @@ function finishEdit(index) {
     tasks.value[index] = editTask.value.trim();
     editIndex.value = null;
     editTask.value = '';
-    editError.value = false; // Ensure error state is reset
+    editError.value = false;
   } else {
-    editError.value = true; // Set error state if task is empty
+    editError.value = true;
   }
 }
 </script>
@@ -121,11 +121,11 @@ function finishEdit(index) {
 }
 
 .input-white .q-field__native {
-  color: white !important; /* Ensures input text is white */
+  color: white !important;
 }
 
 .input-white ::placeholder {
-  color: white !important; /* Ensures placeholder text is white */
+  color: white !important; 
   opacity: 1;
 }
 </style>

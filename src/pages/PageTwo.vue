@@ -9,12 +9,10 @@
       <q-separator dark inset />
 
       <q-card-section>
-        <!-- Calendar Integration -->
         <vue-cal
           class="vuecal--no-border"
           :events="events"
           style="height: 600px"
-          @event-click="onEventClick"
         />
       </q-card-section>
     </q-card>
@@ -22,16 +20,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import VueCal from 'vue-cal';
-import 'vue-cal/dist/vuecal.css'; // VueCal styles
+import 'vue-cal/dist/vuecal.css';
 
-// Initialize with an empty events array
-const events = ref([]);
-
-function onEventClick(event) {
-  alert(`Event clicked: ${event.title}`);
-}
 </script>
 
 <style scoped>
